@@ -19,11 +19,88 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    .wrapper {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .painting {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: #F0F1EC;
+      grid-template-rows: 414px 9px 130px 11px 155px 9px 20px;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px;
+    }
+
+    .gap {
+      background-color: #000;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    #v1 {
+      grid-area: 1 / 2 / -1 / 3;
+    }
+
+    #v2 {
+      grid-area: 3 / 6 / -1 / 7;
+    }
+
+    #v3 {
+      grid-area: 7 / 4 / -1 / 5;
+    }
+
+    #h1 {
+      grid-area: 2 / 1 / 3 / 8;
+    }
+
+    #h2 {
+      grid-area: 6 / 1 / 7 / 7;
+    }
+
+    #h3 {
+      grid-area: 4 / -1 / 5 / -1;
+    }
+
+    .blue {
+      background-color: #004592;
+      grid-area: 3 / -1;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      grid-area: 7 / 3;
+    }
+
+    .gray {
+      background-color: #232629;
+      grid-area: 7 / 5;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+  <div class="wrapper">
+    <div class="painting">
+      <div class="red cell"></div>
+      <div id="v1" class="gap"></div>
+      <div id="v2" class="gap"></div>
+      <div id="v3" class="gap"></div>
+      <div id="h1" class="gap"></div>
+      <div id="h2" class="gap"></div>
+      <div id="h3" class="gap"></div>
+      <div class="blue cell"></div>
+      <div class="yellow cell"></div>
+      <div class="gray cell"></div>
+    </div>
+  </div>
 </body>
 
 </html>
